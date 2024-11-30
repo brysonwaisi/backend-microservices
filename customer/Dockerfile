@@ -1,8 +1,8 @@
-FROM node
+FROM node:20.17-alpine
 
 WORKDIR /app/customer
 
-COPY package.json .
+COPY package*.json ./
 
 RUN npm install
 
